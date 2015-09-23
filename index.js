@@ -14,8 +14,8 @@ module.exports = {
       if (clientId) {
         url += '&client=' + clientId;
       }
+      
+      return '<script src="' + url + '"></script>';
     }
-
-    return '<script src="' + url + '"></script>';
   }
 };
