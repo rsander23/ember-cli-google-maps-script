@@ -9,12 +9,17 @@ module.exports = {
     var env = config.environment;
     var configuration = config['google-maps-script'];
     var clientId = configuration.clientId;
+    var key = configuration.key;
 
     if (type === 'head-footer' && env !== 'test') {
       if (clientId) {
         url += '&client=' + clientId;
       }
-      
+
+      if (key) {
+        url += '&key=' + key;
+      }
+
       return '<script src="' + url + '"></script>';
     }
   }
