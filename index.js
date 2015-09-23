@@ -15,5 +15,7 @@ module.exports = {
         url += '&client=' + clientId;
       }
     }
+
+    return '<script src="' + url + '"></script>';
   }
 };
