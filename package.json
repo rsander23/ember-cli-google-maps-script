@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-google-maps-script",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "This addon simply includes the google maps api",
   "directories": {
     "doc": "doc",
