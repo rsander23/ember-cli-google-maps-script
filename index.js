@@ -8,8 +8,7 @@ module.exports = {
   contentFor: function(type, config) {
     var configuration = config['google-maps-script'];
 
-    var sensor = configuration.sensor || 'false',
-        clientId = configuration.clientId || null,
+    var clientId = configuration.clientId || null,
         version = configuration.version || null,
         language = configuration.language || null,
         key = configuration.key || null,
@@ -17,8 +16,6 @@ module.exports = {
         libs = configuration.libs || [];
 
     if (type === 'head-footer') {
-      
-      url += 'sensor=' + sensor;
 
       if (version) {
         url += '&v=' + version;
